@@ -591,7 +591,7 @@
       
       <div>
         <span style="color:var(--text-secondary); margin-left:10px;">الإصدار</span>
-        <span style="font-weight:800; color:var(--primary-light);" id="versionDisplay">8.0.0</span>
+        <span style="font-weight:800; color:var(--primary-light);" id="versionDisplay">v8.1.0</span>
       </div>
     </div>
 
@@ -1856,45 +1856,105 @@
               <i class="fa-solid fa-circle-info"></i>
               <h3>حول التطبيق</h3>
             </div>
-            <div class="card-body" style="text-align:center;">
-              <div style="font-family:Impact; font-size:4rem; color:var(--primary); margin-bottom:10px;">
-                POS DZ
+            <div class="card-body" style="text-align:center; padding:30px 20px;">
+
+              <!-- اسم التطبيق متوهج -->
+              <div style="
+                font-family:Impact,sans-serif;
+                font-size:4.5rem;
+                font-weight:900;
+                letter-spacing:4px;
+                background:linear-gradient(135deg,#a855f7,#7c3aed,#3b82f6,#a855f7);
+                background-size:300% 300%;
+                -webkit-background-clip:text;
+                -webkit-text-fill-color:transparent;
+                background-clip:text;
+                animation:aboutGlow 3s ease infinite;
+                filter:drop-shadow(0 0 18px rgba(124,58,237,0.7));
+                margin-bottom:10px;
+                line-height:1.1;
+              ">POS DZ</div>
+
+              <style>
+                @keyframes aboutGlow {
+                  0%   { background-position:0% 50%; }
+                  50%  { background-position:100% 50%; }
+                  100% { background-position:0% 50%; }
+                }
+              </style>
+
+              <!-- وصف التطبيق -->
+              <div style="font-size:1.1rem; color:var(--text-secondary); margin-bottom:28px; font-weight:600;">
+                نظام نقاط البيع الإحترافي والمتكامل
               </div>
-              <div style="font-size:1.2rem; color:var(--text-secondary); margin-bottom:20px;">
-                نظام نقاط البيع المتكامل
-              </div>
-              
-              <div style="display:flex; justify-content:center; gap:30px; margin-bottom:30px;">
-                <div>
-                  <div style="font-size:0.8rem; color:var(--text-secondary);">الإصدار</div>
-                  <div style="font-size:2rem; font-weight:900; color:var(--primary-light);" id="aboutVersion">8.0.0</div>
+
+              <!-- خانة حالة الترخيص -->
+              <div style="
+                background:rgba(16,185,129,0.08);
+                border:1px solid rgba(16,185,129,0.35);
+                border-radius:var(--radius);
+                padding:16px 24px;
+                margin-bottom:20px;
+                display:inline-block;
+                min-width:260px;
+              ">
+                <div style="font-size:0.85rem; color:var(--text-secondary); font-weight:700; margin-bottom:6px;">
+                  🔐 حالة الترخيص
                 </div>
-                <div>
-                  <div style="font-size:0.8rem; color:var(--text-secondary);">تاريخ الإصدار</div>
-                  <div style="font-size:2rem; font-weight:900; color:var(--primary-light);">2026-03</div>
+                <div style="font-size:1rem; color:#10b981; font-weight:800;">
+                  ✅ البرنامج مفعل
                 </div>
               </div>
-              
-              <div style="background:var(--bg-dark); border-radius:var(--radius); padding:20px; margin-bottom:20px;">
-                <div style="display:flex; align-items:center; gap:15px;">
-                  <div style="width:50px; height:50px; border-radius:50%; background:var(--primary); display:flex; align-items:center; justify-content:center; font-size:1.5rem;">
-                    👨‍💻
-                  </div>
-                  <div style="text-align:right;">
-                    <div style="font-weight:800;">المطور: ب.حمزة</div>
-                    <div style="color:var(--text-secondary); font-size:0.85rem;">شركة POS DZ</div>
-                    <div style="margin-top:5px;">
-                      <a href="https://wa.me/0770044850" target="_blank" style="color:#25D366; text-decoration:none;">
-                        <i class="fa-brands fa-whatsapp"></i> 0770044850
-                      </a>
-                    </div>
-                  </div>
+
+              <!-- الإصدار والتاريخ -->
+              <div style="display:flex; justify-content:center; gap:30px; margin-bottom:24px; flex-wrap:wrap;">
+                <div style="background:var(--bg-dark); border-radius:var(--radius-sm); padding:14px 24px;">
+                  <div style="font-size:0.78rem; color:var(--text-secondary); font-weight:700; margin-bottom:4px;">الإصدار</div>
+                  <div style="font-size:1.9rem; font-weight:900; color:var(--primary-light);" id="aboutVersion">v8.1.0</div>
+                </div>
+                <div style="background:var(--bg-dark); border-radius:var(--radius-sm); padding:14px 24px;">
+                  <div style="font-size:0.78rem; color:var(--text-secondary); font-weight:700; margin-bottom:4px;">تاريخ الإصدار</div>
+                  <div style="font-size:1.9rem; font-weight:900; color:var(--primary-light);">2026-03</div>
                 </div>
               </div>
-              
-              <div style="color:var(--text-secondary); font-size:0.8rem;">
-                © 2026 POS DZ - جميع الحقوق محفوظة
+
+              <!-- خانة المطور — محاذاة وسط -->
+              <div style="
+                background:var(--bg-dark);
+                border-radius:var(--radius);
+                padding:22px 28px;
+                margin-bottom:28px;
+                display:flex;
+                flex-direction:column;
+                align-items:center;
+                gap:10px;
+              ">
+                <div style="
+                  width:56px; height:56px; border-radius:50%;
+                  background:var(--gradient-primary);
+                  display:flex; align-items:center; justify-content:center;
+                  font-size:1.7rem;
+                  box-shadow:0 4px 16px var(--glow);
+                  margin-bottom:4px;
+                ">👨‍💻</div>
+                <div style="font-weight:800; font-size:1rem; color:var(--text-primary);">المطور: ب.حمزة</div>
+                <div style="color:var(--text-secondary); font-size:0.88rem; font-weight:600;">مؤسسة POS DZ</div>
+                <a href="https://wa.me/0770044850" target="_blank" style="
+                  color:#25D366; text-decoration:none;
+                  font-weight:700; font-size:0.95rem;
+                  display:flex; align-items:center; gap:6px;
+                  margin-top:4px;
+                ">
+                  <i class="fa-brands fa-whatsapp" style="font-size:1.1rem;"></i>
+                  0770044850
+                </a>
               </div>
+
+              <!-- Footer خارج الخانة -->
+              <div style="color:var(--text-secondary); font-size:0.82rem; font-weight:600; letter-spacing:0.3px;">
+                POS DZ 2026 &nbsp;–&nbsp; جميع الحقوق محفوظة &#174;
+              </div>
+
             </div>
           </div>
         </div>

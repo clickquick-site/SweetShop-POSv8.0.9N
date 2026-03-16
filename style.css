@@ -339,13 +339,13 @@ input,select,textarea,button {
 /* Sidebar Header */
 .sidebar-header {
   background:var(--bg-medium);
-  padding:16px 14px 14px;
+  padding:10px 14px;
   border-bottom:2px solid var(--primary);
   flex-shrink:0;
 }
 .sidebar-header-top {
   display:flex; align-items:center; justify-content:space-between;
-  margin-bottom:12px;
+  margin-bottom:0;
 }
 .sidebar-brand-text {
   font-family:Impact,sans-serif;
@@ -380,11 +380,11 @@ input,select,textarea,button {
 .sidebar-user-role { font-size:0.73rem; color:var(--text-secondary); font-weight:600; }
 
 /* Navigation */
-.sidebar-nav { flex:1; overflow-y:auto; padding:6px 0; }
+.sidebar-nav { flex:1; overflow-y:auto; padding:3px 0; }
 
 /* Group label */
 .nav-group-label {
-  padding:10px 14px 3px;
+  padding:6px 14px 2px;
   font-size:0.68rem; font-weight:800;
   color:var(--text-secondary); letter-spacing:1.2px;
   text-transform:uppercase; opacity:0.55;
@@ -393,7 +393,7 @@ input,select,textarea,button {
 /* Nav items */
 .nav-item {
   display:flex !important; align-items:center !important;
-  padding:0 14px; height:48px; cursor:pointer;
+  padding:0 14px; height:42px; cursor:pointer;
   transition:var(--transition);
   text-decoration:none; color:var(--text-primary);
   position:relative; margin:1px 8px;

@@ -1762,11 +1762,6 @@ function initSidebar() {
   sidebar.innerHTML = `
     <!-- رأس الـ Sidebar -->
     <div class="sidebar-header">
-      <div class="sidebar-header-top">
-        <button class="sidebar-close-btn" id="sidebarCloseBtn" title="إغلاق">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </div>
       <div class="sidebar-user-box">
         <div class="sidebar-user-avatar">
           <i class="fa-solid fa-user"></i>
@@ -1775,6 +1770,9 @@ function initSidebar() {
           <div class="sidebar-user-name">${Sanitizer.escape(username)}</div>
           <div class="sidebar-user-role">${roleLabel}</div>
         </div>
+        <button class="sidebar-close-btn" id="sidebarCloseBtn" title="إغلاق" style="margin-right:auto;">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
       </div>
     </div>
 
